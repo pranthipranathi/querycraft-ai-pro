@@ -1,0 +1,12 @@
+package com.querycraft.repository;
+
+import com.querycraft.entity.SavedQuery;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import java.util.List;
+
+@Repository
+public interface SavedQueryRepository extends JpaRepository<SavedQuery, Long> {
+
+    List<SavedQuery> findByUserIdOrderByCreatedAtDesc(Long userId);
+}
