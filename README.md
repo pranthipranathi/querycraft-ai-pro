@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# 🔍 QueryCraft AI Pro
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An AI-powered Natural Language to SQL Assistant that converts plain English questions into SQL queries, executes them, and displays results in a beautiful UI.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+- 🤖 AI-powered SQL Generation using Google Gemini
+- 💡 Plain English SQL Explanation
+- 🛡️ SQL Safety Validation
+- ⚡ Real-time SQL Execution
+- 📜 Query History Tracking
+- 🗄️ Database Schema Viewer
+- 🔐 JWT Authentication
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Backend:** Java 21, Spring Boot, Spring Security, JWT, Hibernate, MySQL, Gemini API
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Frontend:** React.js, Axios, CSS-in-JS
 
-### `npm test`
+## ⚙️ Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend
+```bash
+git clone https://github.com/pranthipranathi/querycraft-ai-pro.git
+cd querycraft-ai-pro
+# Add application.properties with your MySQL and Gemini credentials
+mvn spring-boot:run
+```
 
-### `npm run build`
+### Frontend
+```bash
+cd frontend
+npm install
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📡 API Endpoints
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/api/auth/register` | Register user |
+| POST | `/api/auth/login` | Login |
+| POST | `/api/query/generate` | NL to SQL |
+| GET | `/api/schema/tables` | Get tables |
+| GET | `/api/history` | Query history |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 💡 Example
 
-### `npm run eject`
+**Question:** Show all users
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Generated SQL:**
+```sql
+SELECT * FROM users;
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Explanation:** This query retrieves all records from the users table.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 👩‍💻 Developer
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Pranathi** — Final Year B.Tech Student
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- GitHub: [@pranthipranathi](https://github.com/pranthipranathi)
+- Portfolio: [pranthipranathi.github.io](https://pranthipranathi.github.io/personal-website-Portfolio)
